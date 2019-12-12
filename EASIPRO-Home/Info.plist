@@ -44,7 +44,7 @@
 		</dict>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>6</string>
+	<string>7</string>
 	<key>FHIR_BASE_URL</key>
 	<string>$(FHIR_BASE_URL)</string>
 	<key>LSRequiresIPhoneOS</key>
@@ -61,12 +61,12 @@
 	<string>Test App Only. Will not be usedWill not be used</string>
 	<key>NSMotionUsageDescription</key>
 	<string>Test App Only. Will not be used</string>
+	<key>NSSpeechRecognitionUsageDescription</key>
+	<string>$(SPEECH_USAGE)</string>
 	<key>OMRON_ClientId</key>
 	<string>$(OMRON_ClientId)</string>
 	<key>OMRON_Secret</key>
 	<string>$(OMRON_Secret)</string>
-	<key>SMART_BASE_HTTP_SCHEMA</key>
-	<string>$(SMART_BASE_HTTP_SCHEMA)</string>
 	<key>SMART_CLIENT_CALLBACK_URI</key>
 	<string>$(SMART_CLIENT_CALLBACK_URI)</string>
 	<key>SMART_CLIENT_ID</key>
