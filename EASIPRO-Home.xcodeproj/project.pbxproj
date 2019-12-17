@@ -14,7 +14,7 @@
 		D42B50D4228B7AB4007AC6D2 /* SMART.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4AD20B1209AAD990050AF19 /* SMART.framework */; };
 		D42B50D5228B7AB4007AC6D2 /* SMART.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D4AD20B1209AAD990050AF19 /* SMART.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D42EDE91238D80F40010C17C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42EDE90238D80F40010C17C /* Extensions.swift */; };
-		D4587A6C20AD2B7E00F34744 /* Config_raheel.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = D4587A6B20AD2B7E00F34744 /* Config_raheel.xcconfig */; };
+		D4491B0723A405A600F3CAD9 /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = D4491B0623A405A600F3CAD9 /* Config.xcconfig */; };
 		D45DE63A2099FA3D00D3C6A2 /* MainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45DE6392099FA3D00D3C6A2 /* MainCell.swift */; };
 		D45DE641209A0F4000D3C6A2 /* ChartsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45DE640209A0F4000D3C6A2 /* ChartsViewController.swift */; };
 		D461C7FC209A4C7F0084A85C /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D461C7FB209A4C7F0084A85C /* DetailViewController.swift */; };
@@ -49,7 +49,7 @@
 		D42825C0239ED524009763F7 /* ResearchKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ResearchKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D42825C2239ED524009763F7 /* SMARTMarkers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SMARTMarkers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D42EDE90238D80F40010C17C /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		D4587A6B20AD2B7E00F34744 /* Config_raheel.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config_raheel.xcconfig; sourceTree = "<group>"; };
+		D4491B0623A405A600F3CAD9 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Config.xcconfig; path = ../Config.xcconfig; sourceTree = "<group>"; };
 		D45DE6392099FA3D00D3C6A2 /* MainCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCell.swift; sourceTree = "<group>"; };
 		D45DE640209A0F4000D3C6A2 /* ChartsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartsViewController.swift; sourceTree = "<group>"; };
 		D461C7FB209A4C7F0084A85C /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
@@ -85,8 +85,8 @@
 		D4C9EA4B2098F57E006D41DB = {
 			isa = PBXGroup;
 			children = (
+				D4491B0623A405A600F3CAD9 /* Config.xcconfig */,
 				D4FEBDB521E52C3F0057C77D /* README.md */,
-				D4587A6B20AD2B7E00F34744 /* Config_raheel.xcconfig */,
 				D4AD20B1209AAD990050AF19 /* SMART.framework */,
 				D4C9EA562098F57E006D41DB /* EASIPRO-Home */,
 				D4C9EA552098F57E006D41DB /* Products */,
@@ -197,8 +197,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4587A6C20AD2B7E00F34744 /* Config_raheel.xcconfig in Resources */,
 				D4C9EA642098F57E006D41DB /* LaunchScreen.storyboard in Resources */,
+				D4491B0723A405A600F3CAD9 /* Config.xcconfig in Resources */,
 				D4C9EA612098F57E006D41DB /* Assets.xcassets in Resources */,
 				D4FEBDB621E52C3F0057C77D /* README.md in Resources */,
 				D4C9EA5F2098F57E006D41DB /* Main.storyboard in Resources */,
@@ -246,7 +246,7 @@
 /* Begin XCBuildConfiguration section */
 		D4C9EA662098F57E006D41DB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D4587A6B20AD2B7E00F34744 /* Config_raheel.xcconfig */;
+			baseConfigurationReference = D4491B0623A405A600F3CAD9 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -304,7 +304,7 @@
 		};
 		D4C9EA672098F57E006D41DB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D4587A6B20AD2B7E00F34744 /* Config_raheel.xcconfig */;
+			baseConfigurationReference = D4491B0623A405A600F3CAD9 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
