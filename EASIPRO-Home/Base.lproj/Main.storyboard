@@ -11,12 +11,12 @@
         <scene sceneID="yl2-sM-qoP">
             <objects>
                 <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" barStyle="black" id="W28-zg-YXA">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="selectedImageTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="wIy-Ke-NpY" kind="relationship" relationship="viewControllers" id="lzI-Bp-zto"/>
@@ -62,7 +62,7 @@
                                         </label>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2M5-UV-En7" customClass="LineChartView" customModule="SMARTMarkers">
                                             <rect key="frame" x="16" y="84.5" width="311" height="32"/>
-                                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="backgroundColor" systemColor="secondarySystemBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="32" id="7lQ-14-IU3"/>
                                             </constraints>
@@ -230,11 +230,11 @@
             </objects>
             <point key="canvasLocation" x="2757.5999999999999" y="691.304347826087"/>
         </scene>
-        <!--PRO-->
+        <!--Requests-->
         <scene sceneID="Lbk-E6-OUU">
             <objects>
                 <navigationController id="wIy-Ke-NpY" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="PRO" image="insightsIcon2" id="Gp2-EI-N0t"/>
+                    <tabBarItem key="tabBarItem" title="Requests" image="first" selectedImage="first" id="Gp2-EI-N0t"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="xkp-jO-NiU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -300,8 +300,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="first" width="30" height="30"/>
         <image name="insightsIcon" width="32" height="32"/>
-        <image name="insightsIcon2" width="32" height="32"/>
         <image name="profileIcon" width="32" height="32"/>
     </resources>
 </document>
