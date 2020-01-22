@@ -44,10 +44,14 @@ class MainCell: UITableViewCell {
                 lblStatus.text = "NEXT ON " + (duedate.shortDate)
                 backgroundColor = upcomingBgColor
             }
+            else {
+                lblStatus.text = "Last: " + (duedate.shortDate)
+                backgroundColor = upcomingBgColor
+            }
         }
         else {
+            backgroundColor = UIColor.white
             lblStatus.text = status?.rawValue.uppercased() ?? "-"
-            backgroundColor = upcomingBgColor
         }
         
         

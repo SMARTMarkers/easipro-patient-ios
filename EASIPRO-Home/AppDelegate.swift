@@ -43,11 +43,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         
         if url.scheme == "smpro" {
-            
             fhir.callbackManager?.handleRedirect(url: url)
-            
-            
-            
         }
         
 
@@ -63,7 +59,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func showOmron() {
         
-
         omron.sm_taskController { (task, e) in
             if let t = task {
                 self.window?.rootViewController?.present(t, animated: true, completion: nil)

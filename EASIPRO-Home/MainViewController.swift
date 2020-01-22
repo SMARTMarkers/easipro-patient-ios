@@ -170,6 +170,11 @@ extension MainViewController {
             }
         }
         
+        let iOS = TaskSet(tasks: [
+            TaskController(instrument: Instruments.HealthKit.HealthRecords.instance)
+        ], status: "iOS Health Record")
+        sets.append(iOS)
+        
         return sets
     }
 }
@@ -190,8 +195,9 @@ extension MainViewController: InstrumentResolver {
         
         if let url = controller.request?.rq_instrumentMetadataQuestionnaireReferenceURL {
             // PROMIS/AssessmentCenter hosted Questionnaire
-            if url.absoluteString.contains("https://mss.fsm.northwestern.edu/AC_API_CR"), let promisServer = fhir.promis?.server {
+            if url.absoluteString.contains("https://mss.fsm.northwestern.edu"), let promisServer = fhir.promis?.server {
                 let questionnaireId = url.lastPathComponent
+                let semaphore = DispatchSemaphore(value: 0)
                 Questionnaire.read(questionnaireId, server: promisServer) { (resource, error) in
                     if let questionnaire = resource as? Questionnaire {
                         callback(questionnaire, nil)
@@ -199,7 +205,18 @@ extension MainViewController: InstrumentResolver {
                     else {
                         callback(nil, error)
                     }
+                    semaphore.signal()
                 }
+                semaphore.wait()
+            }
+            else {
+                callback(nil, nil)
+            }
+        }
+        else
+        if let code = controller.request?.rq_code {
+            if code.system?.absoluteString == "http://omronhealthcare.com" {
+                callback(Instruments.Web.OmronBloodPressure.instance(authSettings: FHIRManager.OmronAuthSettings()!, callbackManager: &fhir.callbackManager!), nil)
             }
             else {
                 callback(nil, nil)
