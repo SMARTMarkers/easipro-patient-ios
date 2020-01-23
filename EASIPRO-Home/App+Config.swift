@@ -38,7 +38,7 @@ extension FHIRManager {
         }
         
         let settings = [
-            "client_name"   : "easipro-clinic",
+            "client_name"   : "easipro-home",
             "client_id"     : "51914e53-5230-4e35-964a-c62139884120",
             "redirect"      : "smartmarkers-home://smartcallback",
             "scope"         : "openid profile user/*.* launch"
