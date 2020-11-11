@@ -28,6 +28,58 @@
 		D4FEBDB621E52C3F0057C77D /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = D4FEBDB521E52C3F0057C77D /* README.md */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		D4A66215255C48650081570F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D4A66211255C48650081570F /* SMARTMarkers.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D4E75D5D2035E73E000CE95A;
+			remoteInfo = SMARTMarkers;
+		};
+		D4A6621D255C496C0081570F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D4A66217255C496C0081570F /* ResearchKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B183A5951A8535D100C76870;
+			remoteInfo = ResearchKit;
+		};
+		D4A6621F255C496C0081570F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D4A66217255C496C0081570F /* ResearchKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 86CC8E9A1AC09332001CCD89;
+			remoteInfo = ResearchKitTests;
+		};
+		D4A66229255C49760081570F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D4A66221255C49760081570F /* SwiftSMART.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE43B1A919546D880017679A;
+			remoteInfo = "SwiftSMART-iOS";
+		};
+		D4A6622B255C49760081570F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D4A66221255C49760081570F /* SwiftSMART.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE43B1B319546D880017679A;
+			remoteInfo = "SwiftSMART-iOSTests";
+		};
+		D4A6622D255C49760081570F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D4A66221255C49760081570F /* SwiftSMART.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EECAA7831A5D3DE60062C64B;
+			remoteInfo = "SwiftSMART-macOS";
+		};
+		D4A6622F255C49760081570F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D4A66221255C49760081570F /* SwiftSMART.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE13AA921A5D44D100B901FD;
+			remoteInfo = "SwiftSMART-macOSTests";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		D42B50D6228B7AB4007AC6D2 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -53,6 +105,9 @@
 		D45DE6392099FA3D00D3C6A2 /* MainCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCell.swift; sourceTree = "<group>"; };
 		D45DE640209A0F4000D3C6A2 /* ChartsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartsViewController.swift; sourceTree = "<group>"; };
 		D461C7FB209A4C7F0084A85C /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		D4A66211255C48650081570F /* SMARTMarkers.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SMARTMarkers.xcodeproj; path = SMARTMarkers/SMARTMarkers.xcodeproj; sourceTree = "<group>"; };
+		D4A66217255C496C0081570F /* ResearchKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ResearchKit.xcodeproj; path = SMARTMarkers/ResearchKit/ResearchKit.xcodeproj; sourceTree = "<group>"; };
+		D4A66221255C49760081570F /* SwiftSMART.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftSMART.xcodeproj; path = SMARTMarkers/SwiftSMART/SwiftSMART.xcodeproj; sourceTree = "<group>"; };
 		D4AD20B1209AAD990050AF19 /* SMART.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SMART.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4C9EA542098F57E006D41DB /* EASIPRO-Home.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EASIPRO-Home.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4C9EA572098F57E006D41DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -82,9 +137,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D4A66212255C48650081570F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D4A66216255C48650081570F /* SMARTMarkers.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D4A66218255C496C0081570F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D4A6621E255C496C0081570F /* ResearchKit.framework */,
+				D4A66220255C496C0081570F /* ResearchKitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D4A66222255C49760081570F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D4A6622A255C49760081570F /* SMART.framework */,
+				D4A6622C255C49760081570F /* SwiftSMART-iOSTests.xctest */,
+				D4A6622E255C49760081570F /* SMART.framework */,
+				D4A66230255C49760081570F /* SwiftSMART-macOSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		D4C9EA4B2098F57E006D41DB = {
 			isa = PBXGroup;
 			children = (
+				D4A66221255C49760081570F /* SwiftSMART.xcodeproj */,
+				D4A66217255C496C0081570F /* ResearchKit.xcodeproj */,
+				D4A66211255C48650081570F /* SMARTMarkers.xcodeproj */,
 				D4491B0623A405A600F3CAD9 /* Config.xcconfig */,
 				D4FEBDB521E52C3F0057C77D /* README.md */,
 				D4AD20B1209AAD990050AF19 /* SMART.framework */,
@@ -185,12 +271,78 @@
 			mainGroup = D4C9EA4B2098F57E006D41DB;
 			productRefGroup = D4C9EA552098F57E006D41DB /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = D4A66218255C496C0081570F /* Products */;
+					ProjectRef = D4A66217255C496C0081570F /* ResearchKit.xcodeproj */;
+				},
+				{
+					ProductGroup = D4A66212255C48650081570F /* Products */;
+					ProjectRef = D4A66211255C48650081570F /* SMARTMarkers.xcodeproj */;
+				},
+				{
+					ProductGroup = D4A66222255C49760081570F /* Products */;
+					ProjectRef = D4A66221255C49760081570F /* SwiftSMART.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				D4C9EA532098F57E006D41DB /* EASIPRO-Home */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		D4A66216255C48650081570F /* SMARTMarkers.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SMARTMarkers.framework;
+			remoteRef = D4A66215255C48650081570F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D4A6621E255C496C0081570F /* ResearchKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ResearchKit.framework;
+			remoteRef = D4A6621D255C496C0081570F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D4A66220255C496C0081570F /* ResearchKitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ResearchKitTests.xctest;
+			remoteRef = D4A6621F255C496C0081570F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D4A6622A255C49760081570F /* SMART.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SMART.framework;
+			remoteRef = D4A66229255C49760081570F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D4A6622C255C49760081570F /* SwiftSMART-iOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SwiftSMART-iOSTests.xctest";
+			remoteRef = D4A6622B255C49760081570F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D4A6622E255C49760081570F /* SMART.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SMART.framework;
+			remoteRef = D4A6622D255C49760081570F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D4A66230255C49760081570F /* SwiftSMART-macOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SwiftSMART-macOSTests.xctest";
+			remoteRef = D4A6622F255C49760081570F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		D4C9EA522098F57E006D41DB /* Resources */ = {

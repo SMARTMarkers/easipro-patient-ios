@@ -3,7 +3,7 @@ EASI-PRO Home App
 
 ### A Health app for Patient Generated Health Data
 
-EASI-PRO Home is a standalone patient facing iOS app built on the [SMART on FHIR][[sf] open specification and powered by the [SMART Markers][sm] [framework] to receive and respond to practitioner's _requests_ with PGHD data generated through survey like modules in-app. Built using Swift for iOS.
+EASI-PRO Home is a standalone patient facing iOS app built on the [SMART on FHIR][sf] open specification and powered by the [SMART Markers][sm] [framework] to receive and respond to practitioner's _requests_ with PGHD data generated through survey like modules in-app. Built using Swift for iOS.
 
 ### PGHD Instruments
 
